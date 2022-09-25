@@ -1,12 +1,13 @@
 #!/bin/bash
 
-read -p -r "Where would you like to stop?" end
+read -p "Where would you like to stop?" ending
 x=0
 y=1
-while [ "$y" -le "$end" ]
+echo $x
+while [ "$y" -le "$ending" ]
 do
+  echo $y
   z=$(("$x"+"$y"))
-echo "$z"
-x=$y
-y=$z
+  x=$y
+  y=$z
 done
