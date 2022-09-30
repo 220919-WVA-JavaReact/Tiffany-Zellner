@@ -74,8 +74,8 @@ public static boolean isEven(String s){
     
     if (s.length() % 2 == 0) {
           System.out.println("True");
-} else 
-    return false;
+   } 
+      return false;
 }
 
 /*
