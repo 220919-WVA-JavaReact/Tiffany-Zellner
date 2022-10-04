@@ -5,14 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c1dd139c-5e3b-460b-b0f0-6b1846c3510d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/revature/models/Tickets.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/revature/models/Users.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/revature/dao/TicketDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/revature/dao/TicketDAOImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/revature/dao/UserDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/revature/dao/UserDAOImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/revature/models/Ticket.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/revature/service/TicketService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/revature/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Assignments/ArrayList_assignment/src/main/java/com/revature/arraylist/ArrayList.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Assignments/ArrayList_assignment/src/main/java/com/revature/arraylist/ArrayList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Assignments/ArrayList_assignment/target/classes/com/revature/arraylist/ArrayList.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Assignments/ArrayList_assignment/target/classes/com/revature/arraylist/ArrayList.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Assignments/MOCK_DATA.csv" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Assignments/calculator.sh" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Assignments/persist-data.sh" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/revature/console_parts/Menu.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/revature/console_parts/RegisterUsers.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/revature/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/revature/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/revature/models/Tickets.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/revature/models/Users.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/revature/models/User.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,6 +31,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -40,13 +49,13 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Admin/OneDrive/Desktop/2022922- JavaReact/Java&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "C:/Users/Admin/OneDrive/Desktop/2022922- JavaReact/Tiffany-Zellner/Projects/ReimbursementProject"
   }
-}</component>
+}]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
