@@ -5,22 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c1dd139c-5e3b-460b-b0f0-6b1846c3510d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/revature/util/ConnectionUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Assignments/ArrayList_assignment/src/main/java/com/revature/arraylist/ArrayList.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Assignments/ArrayList_assignment/src/main/java/com/revature/arraylist/ArrayList.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Assignments/ArrayList_assignment/target/classes/com/revature/arraylist/ArrayList.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Assignments/ArrayList_assignment/target/classes/com/revature/arraylist/ArrayList.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Assignments/MOCK_DATA.csv" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Assignments/calculator.sh" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Assignments/persist-data.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/revature/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/revature/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/revature/dao/TicketDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/revature/dao/TicketDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/revature/dao/TicketDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/revature/dao/TicketDAOImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/revature/dao/UserDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/revature/dao/UserDAOImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/revature/models/Ticket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/revature/models/Ticket.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/revature/service/TicketService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/revature/service/TicketService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
