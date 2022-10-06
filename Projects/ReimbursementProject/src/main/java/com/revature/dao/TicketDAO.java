@@ -2,8 +2,13 @@ package com.revature.dao;
 
 import com.revature.models.Ticket;
 
-public interface TicketDAO {
-    void createTicket(double amount, String description, int user_id);
+import java.sql.SQLException;
+import java.util.List;
 
-    void updateTicket(Ticket update);
+public interface TicketDAO {
+    Ticket createTicket(double amount, String description) throws SQLException;
+
+    List<Ticket> getAllTickets();
+
+    List<Ticket> getAllTickets(int id, double amount, String description, String status, int user_id);
 }

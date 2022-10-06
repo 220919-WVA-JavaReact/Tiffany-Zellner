@@ -14,13 +14,15 @@ public class Ticket {
 
     private int user_id;
 
-    public Ticket(double amount, String description, int user_id) {
+    public Ticket(double amount, String description) {
         this.amount = amount;
         this.description = description;
-        this.user_id = user_id;
     }
 
     public Ticket() {
+    }
+
+    public Ticket(int id, double amount, String description, int user_id) {
     }
 
     public int getID() {
