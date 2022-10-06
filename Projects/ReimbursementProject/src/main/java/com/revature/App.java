@@ -3,11 +3,9 @@ package com.revature;
 import com.revature.models.User;
 import com.revature.service.TicketService;
 import com.revature.service.UserService;
-import com.revature.util.ConnectionUtil;
 
-import java.sql.Connection;
+
 import java.sql.SQLException;
-import java.sql.SQLOutput;
 import java.util.Scanner;
 
 public class App {
@@ -17,7 +15,7 @@ public class App {
     public static TicketService ts = new TicketService();
 
     public static void main(String[] args) throws SQLException {
-        System.out.println("Press 1 to Login, Press 2 to register, press 3 to submit new ticket");
+        System.out.println("Press 1 to Login, Press 2 to register");
 
         Scanner input = new Scanner(System.in);
 
@@ -29,12 +27,10 @@ public class App {
             loggedInUser = us.Login();
         } else if (choice.equals("2")){
             loggedInUser = us.Register();
-        } else if (choice.equals("3")){
-            ts.createTicket();
         }
 
         if (loggedInUser != null){
-            System.out.println("Press 1 to create ticket, Press 2 to view all tickets");
+            System.out.println("Press 1 to create ticket, Press 2 to view all your tickets");
 
             String subchoice = input.nextLine();
 
@@ -43,7 +39,7 @@ public class App {
                     ts.createTicket();
                     break;
                 case "2":
-                    ts.getAllTickets();
+                    ts.getAllTicketsByUsername(loggedInUser.getUsername());
                     break;
 
             }

@@ -12,17 +12,23 @@ public class Ticket {
 
     private String status = "pending";
 
-    private int user_id;
+    private String username;
 
-    public Ticket(double amount, String description) {
+    public Ticket(double amount, String description, String username) {
         this.amount = amount;
         this.description = description;
+        this.username = username;
+    }
+
+    public Ticket(int ID, double amount, String description, String status, String username) {
+        this.ID = ID;
+        this.amount = amount;
+        this.description = description;
+        this.status = status;
+        this.username = username;
     }
 
     public Ticket() {
-    }
-
-    public Ticket(int id, double amount, String description, int user_id) {
     }
 
     public int getID() {
@@ -57,12 +63,23 @@ public class Ticket {
         this.status = status;
     }
 
-    public int getUser_id() {
-        return user_id;
+    public String getUsername() {
+        return username;
     }
 
-    public void setUser_id(int user_id) {
-        this.user_id = user_id;
+    public void setUsername(String username) {
+        this.username = username;
+    }
+
+    @Override
+    public String toString() {
+        return "Ticket{" +
+                "ID=" + ID +
+                ", amount=" + amount +
+                ", description='" + description + '\'' +
+                ", status='" + status + '\'' +
+                ", username='" + username + '\'' +
+                '}';
     }
 
     @Override
@@ -70,11 +87,11 @@ public class Ticket {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Ticket ticket = (Ticket) o;
-        return ID == ticket.ID && Double.compare(ticket.amount, amount) == 0 && user_id == ticket.user_id && description.equals(ticket.description) && status.equals(ticket.status);
+        return ID == ticket.ID && Double.compare(ticket.amount, amount) == 0 && description.equals(ticket.description) && status.equals(ticket.status) && username.equals(ticket.username);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(ID, amount, description, status, user_id);
+        return Objects.hash(ID, amount, description, status, username);
     }
 }

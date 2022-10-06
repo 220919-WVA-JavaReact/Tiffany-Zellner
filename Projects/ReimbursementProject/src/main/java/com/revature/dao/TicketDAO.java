@@ -6,9 +6,9 @@ import java.sql.SQLException;
 import java.util.List;
 
 public interface TicketDAO {
-    Ticket createTicket(double amount, String description) throws SQLException;
+    Ticket createTicket(double amount, String description, String username) throws SQLException;
 
-    List<Ticket> getAllTickets();
+    List<Ticket> getAllTicketsByUsername(String username);
 
-    List<Ticket> getAllTickets(int id, double amount, String description, String status, int user_id);
+
 }

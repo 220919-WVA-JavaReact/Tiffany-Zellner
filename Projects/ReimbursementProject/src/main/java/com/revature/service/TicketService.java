@@ -17,19 +17,22 @@ public class TicketService {
     public void createTicket() throws SQLException {
         System.out.println("Please enter amount of reimbursement: ");
         double amount = input.nextDouble();
-
+        input.nextLine();
         System.out.println("Please enter description: ");
         String description = input.nextLine();
 
-        td.createTicket(amount, description);
+        System.out.println("Please enter your username: ");
+        String username = input.nextLine();
+
+        td.createTicket(amount, description, username);
     }
 
-    public void getAllTickets(){
+    public void getAllTicketsByUsername(String username){
         System.out.println("Using the database to return all our ticket objects");
 
-        List<Ticket> ticketList = td.getAllTickets();
+        List<Ticket> existingTickets = td.getAllTicketsByUsername(username);
 
-        for(Ticket ticket: ticketList){
+        for(Ticket ticket: existingTickets){
             System.out.println(ticket);
         }
 
