@@ -39,6 +39,7 @@ public class UserDAOImpl implements UserDAO{
             }
         } catch (SQLException e) {
             e.printStackTrace();
+            return null;
         }
 
         return byuser;
@@ -75,6 +76,7 @@ public class UserDAOImpl implements UserDAO{
         } catch (SQLException e) {
             e.printStackTrace();
             System.out.println("Couldn't register user to the database");
+            return null;
         }
         return user;
     }

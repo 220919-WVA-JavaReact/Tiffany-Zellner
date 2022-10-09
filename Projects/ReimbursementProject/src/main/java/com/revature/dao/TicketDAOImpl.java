@@ -31,6 +31,7 @@ public class TicketDAOImpl implements TicketDAO {
             if ((rs = stmt.executeQuery()) != null){
                 rs.next();
 
+
                 int id = rs.getInt("id");
                 double receivedAmount = rs.getDouble("amount");
                 String receivedDescription = rs.getString("description");

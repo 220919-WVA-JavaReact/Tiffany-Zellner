@@ -17,13 +17,26 @@ public class TicketService {
     public void createTicket() throws SQLException {
         System.out.println("Please enter amount of reimbursement: ");
         double amount = input.nextDouble();
+        while (amount == 0 ){
+            System.out.println("Invalid input. ");
+            System.out.println("Please enter amount of reimbursement: ");
+            amount = input.nextDouble();
+        }
         input.nextLine();
         System.out.println("Please enter description: ");
         String description = input.nextLine();
-
+        while (description.length() < 1 || description == null){
+            System.out.println("Invalid input");
+            System.out.println("Please enter description: ");
+            description = input.nextLine();
+        }
         System.out.println("Please enter your username: ");
         String username = input.nextLine();
-
+        while (username.length() < 1 || username == null){
+            System.out.println("Invalid input");
+            System.out.println("Please enter your username: ");
+            username = input.nextLine();
+        }
         td.createTicket(amount, description, username);
     }
 
